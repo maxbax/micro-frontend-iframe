@@ -23,11 +23,12 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <h1>Micro-frontend-iframe Example!</h1>
+        <button type="button" onClick={this.sendToChild}>Send message to child</button>
+        <br/><br/>
         <IFrame
           src="http://localhost:8082"
           onReceiveMessage={this.receiveFromChild}
         />
-        <button type="button" onClick={this.sendToChild}>Send message to child</button>
         {messageFromChild && (
         <p>
           <b>Child says:</b>

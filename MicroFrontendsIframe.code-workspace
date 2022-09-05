@@ -5,9 +5,18 @@
     }
   ],
   "settings": {
-    "eslint.autoFixOnSave": true,
     "editor.formatOnSave": true,
     "javascript.format.enable": false,
-    "eslint.alwaysShowStatus": true
+    "eslint.alwaysShowStatus": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+    "stylelint.validate": [
+      "css",
+      "less",
+      "postcss",
+      "scss"
+    ]
   }
 }

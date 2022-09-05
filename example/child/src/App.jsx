@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.scss';
 import MicroIframe, { pluginInterceptor, isCalledByParent } from 'micro-frontend-iframe';
 
 MicroIframe.init('CHILD-ID');
